@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <heaven7_extendedpreviousnext translate="label" module="extendedpreviousnext">
+            <label>Heaven7 Extensions</label>
+            <sort_order>1</sort_order>
+        </heaven7_extendedpreviousnext>
+    </tabs>
+    <sections>
+        <heaven7_extendedpreviousnext translate="label" module="extendedpreviousnext">
+            <label>Extended Previous Next Product</label>
+            <tab>heaven7_extendedpreviousnext</tab>
+            <frontend_type>text</frontend_type>
+            <frontend_model>extendedpreviousnext/adminhtml_system_config_form</frontend_model>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<general translate="label" module="extendedpreviousnext">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+
+                        <position_select translate="label">
+                            <label>Position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/position</source_model>
+                        </position_select>
+
+                        <loop_select translate="label">
+                            <label>Loop products:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </loop_select>
+
+                        <display_image translate="label">
+                            <label>Display image:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </display_image>
+
+                        <truncate translate="label">
+                            <label>Truncate name to (chars):</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </truncate>
+
+                        <append translate="label">
+                            <label>Append to name (if truncated):</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </append>
+                    </fields>
+               	</general>
+
+                <style translate="label" module="extendedpreviousnext">
+                    <label>Style</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <background_color translate="label">
+                            <label>Background color:</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>colorjoe</frontend_class>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color>
+
+                        <show_border_select translate="label">
+                            <label>Show module border:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </show_border_select>
+
+                        <round_corners translate="label">
+                            <label>Round corners:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </round_corners>
+
+                        <border_color translate="label">
+                            <label>Border color:</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>colorjoe</frontend_class>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </border_color>
+
+                        <font_family translate="label">
+                            <label>Font family:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/font</source_model>
+                        </font_family>
+
+                        <text_color translate="label">
+                            <label>Text color:</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>colorjoe</frontend_class>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                    </fields>
+                </style>
+
+                <previous translate="label" module="extendedpreviousnext">
+                    <label>Previous product</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow to display</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+
+                        <type_select translate="label">
+                            <label>Type:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/type</source_model>
+                        </type_select>
+
+                        <openin_select translate="label">
+                            <label>Open in:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/openin</source_model>
+                        </openin_select>
+
+                        <label translate="label">
+                            <label>Label:</label>
+                            <comment>Button or link text. Ex.: « Previous (#product#)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label>
+
+                        <background_image>
+                            <label>Use image instead of text</label>
+                            <comment><![CDATA[<strong>Upload your custom image]]></comment>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_file</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">background</upload_dir>
+                            <base_url type="media" scope_info="1">background</base_url>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>50</sort_order>
+                        </background_image>
+                    </fields>
+                </previous>
+
+                <next translate="label" module="extendedpreviousnext">
+                    <label>Next product</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow to display</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+
+                        <type_select translate="label">
+                            <label>Type:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/type</source_model>
+                        </type_select>
+
+                        <openin_select translate="label">
+                            <label>Open in:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/openin</source_model>
+                        </openin_select>
+
+                        <label translate="label">
+                            <label>Label:</label>
+                            <comment>Button or link text. Ex.: Next » (#product#)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label>
+                    </fields>
+                </next>
+
+                <category translate="label" module="extendedpreviousnext">
+                    <label>Category</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow to display</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+
+                        <type_select translate="label">
+                            <label>Type:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/type</source_model>
+                        </type_select>
+
+                        <openin_select translate="label">
+                            <label>Open in:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>extendedpreviousnext/openin</source_model>
+                        </openin_select>
+
+                        <label translate="label">
+                            <label>Label:</label>
+                            <comment>Button or link text. Ex.: Up (#category#)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </label>
+                    </fields>
+                </category>
+            </groups>
+        </heaven7_extendedpreviousnext>
+    </sections>
+</config>

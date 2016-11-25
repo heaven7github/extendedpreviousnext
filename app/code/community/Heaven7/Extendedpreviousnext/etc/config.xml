@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Heaven7_Extendedpreviousnext>
+            <version>1.0.1</version>
+        </Heaven7_Extendedpreviousnext>
+    </modules>
+
+
+    <default>
+        <catalog>
+            <extendedpreviousnext></extendedpreviousnext>
+        </catalog>
+    </default>
+
+
+    <frontend>
+        <layout>
+            <updates>
+                <extendedpreviousnext>
+                    <file>extendedpreviousnext.xml</file>
+                </extendedpreviousnext>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+
+        <blocks>
+            <extendedpreviousnext>
+                <class>Heaven7_Extendedpreviousnext_Block</class>
+            </extendedpreviousnext>
+        </blocks>
+
+        <models>
+            <extendedpreviousnext>
+                <class>Heaven7_Extendedpreviousnext_Model</class>
+            </extendedpreviousnext>
+        </models>
+
+        <helpers>
+            <extendedpreviousnext>
+                <class>Heaven7_Extendedpreviousnext_Helper</class>
+            </extendedpreviousnext>
+        </helpers>
+    </global>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Heaven1</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <heaven7_extendedpreviousnext>
+                                            <title>Heaven7 Extended Previous Next Product</title>
+                                        </heaven7_extendedpreviousnext>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <Heaven7_Extendedpreviousnext>
+                    <files>
+                        <default>Heaven7_Extendedpreviousnext.csv</default>
+                    </files>
+                </Heaven7_Extendedpreviousnext>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <extendedpreviousnext before="Mage_Adminhtml">Heaven7_Extendedpreviousnext_Adminhtml</extendedpreviousnext>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <default>
+        <heaven7_extendedpreviousnext>
+            <general>
+                <enabled_select>1</enabled_select>
+                <position_select>both</position_select>
+            </general>
+            <previous>
+                <enabled_select>1</enabled_select>
+                <type_select>link</type_select>
+                <openin_select>same_tab</openin_select>
+                <label>« Previous (#product#)</label>
+            </previous>
+            <next>
+                <enabled_select>1</enabled_select>
+                <type_select>link</type_select>
+                <openin_select>same_tab</openin_select>
+                <label>Next » (#product#)</label>
+            </next>
+        </heaven7_extendedpreviousnext>
+    </default>
+</config>
